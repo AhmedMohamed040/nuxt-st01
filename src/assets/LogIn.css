@@ -1,0 +1,99 @@
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(119, 179, 179);
+    margin: 5% auto 5% auto;
+    width: 300px;
+    max-width: 300px;
+    border-radius: 30px;
+    border-bottom-right-radius: 2px;
+    height: 380px;
+    box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.9);
+    
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+select span img {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+form>img {
+    width: 36%;
+    margin: 0 auto;
+}
+
+form .contanier {
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: 700;
+    padding: 16px;
+    color: #ccc;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .lab b {
+    margin-left: 12px; 
+}
+
+form .fotter {
+    padding-bottom: 16px;
+    text-align: left;
+}
+
+form .contanier select,
+form .contanier input[type=password] {
+    width: 100%;
+    padding: 9px;
+    margin: 8px 0;
+    color: rgb(11, 107, 98);
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+form .contanier .text {
+    font-weight: 500 !important;
+    font-size: 13.5px;
+}
+
+form .contanier button[type=submit] {
+    padding: 7px;
+    color: white;
+    margin-bottom: 5px;
+    background-color: teal;
+    border: 0;
+    font-family: cursive;
+    outline: none;
+    border: 1px dashed #ccc;
+}
+
+ ::placeholder {
+    color: rgba(11, 107, 98, 0.5);
+}
+
+form .contanier button[type=button] {
+    padding: 7px;
+    color: white;
+    width: 50%;
+    font-family: cursive;
+    margin-bottom: 5px;
+    outline: none;
+    border-radius: 18px;
+    background-color: #ccc;
+    margin: auto;
+    border: 0;
+    outline: 0;
+    margin-bottom: 4px;
+}
+/* The container */

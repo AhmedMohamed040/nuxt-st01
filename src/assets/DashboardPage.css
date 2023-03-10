@@ -1,0 +1,173 @@
+:root {
+    --green: teal;
+    --font: cursive;
+    
+}
+header {
+    overflow: hidden;
+    background-color: rgb(119, 179, 179);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+h3 {
+    color: teal;
+    position: relative;
+    font-family: cursive;
+
+}
+
+.log-out-btn {
+    font-family: cursive;
+
+    background-color: #fff;
+    width: 100px;
+    right: 50px;
+    border-radius: 18px;
+    font-size: medium;
+    color: teal;
+    border: teal 1px solid;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-out
+
+}
+
+button:hover {
+
+    background-color: teal;
+    color: #fff;
+}
+
+img {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    left: 50px;
+    transition: 0.3s ease-out
+
+}
+img:hover {
+    border: 2px solid teal;
+    background-color: teal;
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    min-height: 200px;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 20px;
+    padding-left: 150px;
+}
+
+
+.btn {
+    border: 0;
+    font-family: cursive;
+    background-color: #fff;
+    border-radius: 18px;
+    font-size: medium;
+    color: teal;
+    margin-left: 0;
+    border: teal 1px solid;
+    height: 50px;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.3s ease-out
+}
+.todos form {
+  height: 150px;
+  background-color: transparent;
+  width: 100%;
+
+}
+form .add {
+    width: 100px;
+    
+}
+.btn:hover {
+    background-color: teal;
+    color: #fff;
+}
+::placeholder {
+    color: rgba(11, 107, 98, 0.5);
+}
+
+form .f-input {
+    width: calc(100% - 150px);
+    padding: 9px;
+    margin: 8px 0;
+    color: rgb(11, 107, 98);
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    padding-left: 25px;
+    outline: none;
+    margin-right: 20px;
+
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 3px;
+    transition: 0.4s;
+    position: relative;
+    color: var(--green);
+}
+
+
+.item .remove-item {
+    right: 35px;
+    position: relative;
+     width: 70px;
+   
+}
+.item .toggleItem {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: medium;
+    color: teal;
+    margin-left: 0;
+    height: 50px;
+    left: 20px;
+    padding: 0;
+    transition: 0.3s ease-out
+}
+.toggleItem::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: .29vw;
+    background: teal;
+    transition: .3s ease-out;
+    transform-origin: center;
+    border-radius: 50%;
+    transform: scaleX(0);
+
+}
+.complete {
+   
+}
+.complete.toggleItem::after,
+.complete.toggleItem:focus,
+.complete.toggleItem  {
+    transform: scaleX(1) !important;
+
+}

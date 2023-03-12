@@ -83,7 +83,7 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
 @import url(@/assets/DashboardPage.css);
 .container {
     position: relative;
